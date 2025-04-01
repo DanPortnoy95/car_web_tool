@@ -1,5 +1,4 @@
 import pandas as pd
-pd.set_option('future.no_silent_downcasting', True)
 import plotly.express as px
 import streamlit as st
 

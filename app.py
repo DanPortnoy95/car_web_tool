@@ -28,7 +28,7 @@ df['is_4wd'] = df['is_4wd'].replace(1.0, True)
 df['is_4wd'] = df['is_4wd'].fillna(False).astype(bool)
 
 
-st.header('Welcome to the "Vehicels_us" Web-App', divider='rainbow')
+st.header('Welcome to the "Vehicels_us" Web-App', divider=True)
 
 st.subheader('distribution of cars by model year', divider=True)
 

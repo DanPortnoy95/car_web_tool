@@ -17,6 +17,9 @@ To run this project locally, follow these steps:
 
 ## Usage
 
+the web app can be accessed through:
+https://car-web-tool.onrender.com
+
 After launching the app you will see 2 charts
 
 ### distribution of cars by model year

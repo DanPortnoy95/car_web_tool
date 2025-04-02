@@ -28,14 +28,14 @@ df['is_4wd'] = df['is_4wd'].replace(1.0, True)
 df['is_4wd'] = df['is_4wd'].fillna(False).astype(bool)
 
 
-st.header('Welcome to the "Vehicels_us" Web-App', divider=True)
+st.header('Welcome to the "Vehicels_us" Web-App')
 
-st.subheader('distribution of cars by model year', divider=True)
+st.subheader('distribution of cars by model year')
 
 chart1 = px.histogram(df, x='model_year').update_layout(bargap=0.2)
 st.write(chart1)
 
-st.subheader('Correlation between model year and price', divider=True)
+st.subheader('Correlation between model year and price')
 
 price_avg = df.groupby('model_year').agg(price=('price', 'mean'))
 chart2 = px.scatter(price_avg, x=price_avg.index, y='price')
